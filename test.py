@@ -1,6 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 cchrome_options = webdriver.ChromeOptions()
 cchrome_options.add_argument('--headless')
@@ -25,7 +27,9 @@ password_input.send_keys('lockular')
 
 password_input.send_keys(Keys.RETURN)
 
-driver.implicitly_wait(5000) 
+wait = WebDriverWait(driver, 10)  # Maximum wait time in seconds
+
+wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'body[data-turbolinks-preview]')))
 # Fetch the HTML data
 html_data = driver.page_source
 
