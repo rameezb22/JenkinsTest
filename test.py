@@ -33,8 +33,18 @@ time.sleep(60)
 
 html_data = driver.page_source
 
-# Print or process the HTML data as desired
-print(html_data)
+elements = driver.find_elements_by_class_name('xyz')
+
+
+for element in elements:
+    print(element.text)
+
+# Continue with further actions on the found elements
+# For example, you can interact with elements or perform assertions
 
 # Close the browser
 driver.quit()
+
+
+
+
