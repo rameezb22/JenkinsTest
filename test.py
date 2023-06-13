@@ -16,7 +16,7 @@ driver.implicitly_wait(200)  # Adjust the timeout as needed
 
 
 username_input = driver.find_element(By.ID, 'username')
-username_input = driver.find_element(By.ID, 'password')
+password_input = driver.find_element(By.ID, 'password')
 
 
 username_input.send_keys('rameezb')
