@@ -2,7 +2,7 @@
 
 from selenium import webdriver
 
-driver = webdriver.Firefox('/usr/bin/firefox')
+driver = webdriver.Firefox('/home/user/drivers/firefoxdriver')
 # Navigate to the webpage
 driver.get('http://m2g-cloud.lockular.ai')
 
