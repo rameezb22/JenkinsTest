@@ -4,6 +4,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+import time
+
 cchrome_options = webdriver.ChromeOptions()
 cchrome_options.add_argument('--headless')
 cchrome_options.add_argument('--no-sandbox')
@@ -27,10 +29,8 @@ password_input.send_keys('lockular')
 
 password_input.send_keys(Keys.RETURN)
 
-wait = WebDriverWait(driver, 10)  # Maximum wait time in seconds
+time.sleep(30)
 
-wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'body[screen-step-selector]')))
-# Fetch the HTML data
 html_data = driver.page_source
 
 # Print or process the HTML data as desired
