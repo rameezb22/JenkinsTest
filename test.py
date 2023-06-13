@@ -13,7 +13,7 @@ driver = webdriver.Chrome(options=cchrome_options)
 driver.get("https://m2gcloud-staging.lockular.ai")
 
 
-driver.implicitly_wait(200)  # Adjust the timeout as needed
+ # Adjust the timeout as needed
 
 
 username_input = driver.find_element(By.ID, 'username')
@@ -24,6 +24,8 @@ username_input.send_keys('rameezb')
 password_input.send_keys('lockular')
 
 password_input.send_keys(Keys.RETURN)
+
+driver.implicitly_wait(2000) 
 # Fetch the HTML data
 html_data = driver.page_source
 
