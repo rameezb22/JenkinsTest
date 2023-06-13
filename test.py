@@ -25,7 +25,7 @@ password_input.send_keys('lockular')
 
 password_input.send_keys(Keys.RETURN)
 
-driver.implicitly_wait(2000) 
+driver.implicitly_wait(5000) 
 # Fetch the HTML data
 html_data = driver.page_source
 
