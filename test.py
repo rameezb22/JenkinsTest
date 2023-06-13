@@ -29,7 +29,7 @@ password_input.send_keys('lockular')
 
 password_input.send_keys(Keys.RETURN)
 
-time.sleep(30)
+time.sleep(60)
 
 html_data = driver.page_source
 
