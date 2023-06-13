@@ -8,4 +8,4 @@ cchrome_options.add_argument('--disable-dev-shm-usage')
 driver = webdriver.Chrome(options=cchrome_options)
 
 
-driver.get("https://sabien-dasbhoard.lockular.ai/")
+driver.get("https://m2gcloud.lockular.ai/")
