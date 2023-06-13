@@ -1,6 +1,8 @@
 
 
 from selenium import webdriver
+
+driver = webdriver.Firefox()
 # Navigate to the webpage
 driver.get('http://example.com')
 
