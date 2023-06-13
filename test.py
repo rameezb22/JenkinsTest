@@ -29,7 +29,7 @@ password_input.send_keys(Keys.RETURN)
 
 wait = WebDriverWait(driver, 10)  # Maximum wait time in seconds
 
-wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'body[data-turbolinks-preview]')))
+wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'body[screen-step-selector]')))
 # Fetch the HTML data
 html_data = driver.page_source
 
@@ -38,3 +38,5 @@ print(html_data)
 
 # Close the browser
 driver.quit()
+
+datasignals/m2gdashboard:v0.2.19spot
