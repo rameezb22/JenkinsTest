@@ -1,9 +1,11 @@
 
 
-from selenium import webdriver
+#from selenium import webdriver
 
 # Set up the browser driver
-driver = webdriver.Chrome('/path/to/chromedriver')
+#driver = webdriver.Chrome('/path/to/chromedriver')
+
+WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
 
 # Navigate to the webpage
 driver.get('http://example.com')
