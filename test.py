@@ -38,5 +38,3 @@ print(html_data)
 
 # Close the browser
 driver.quit()
-
-datasignals/m2gdashboard:v0.2.19spot
