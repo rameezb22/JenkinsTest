@@ -1,5 +1,9 @@
 from selenium import webdriver
 
-DesiredCapabilities capability = DesiredCapabilities.chrome();
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
-WebDriver driver = new RemoteWebDriver(new URL("https://jenkins.lockular.in:4444/wd/hub"), capability);
+# Set up the desired capabilities
+capabilities = DesiredCapabilities.CHROME
+
+# Set up the remote WebDriver
+driver = webdriver.Remote("https://jenkins.lockular.in:4444/wd/hub", capabilities)
