@@ -1,5 +1,4 @@
-# Install Selenium package
-pip install selenium
+
 
 from selenium import webdriver
 
