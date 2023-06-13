@@ -14,8 +14,8 @@ driver.get("https://m2gcloud-staging.lockular.ai")
 driver.implicitly_wait(200)  # Adjust the timeout as needed
 
 
-username_input = driver.find_element_by_id('username')
-password_input = driver.find_element_by_id('password')
+username_input = driver.find_element("name", "username")
+password_input = driver.find_element("name", "password")
 
 
 username_input.send_keys('rameezb')
