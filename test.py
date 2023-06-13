@@ -1,3 +1,3 @@
 from selenium import webdriver
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver'))

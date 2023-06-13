@@ -3,3 +3,4 @@ USER root
 RUN apt-get update && apt-get install python3-pip toilet curl awscli jq  -y && pip install --upgrade pip
 RUN  pip3 install selenium
 
+RUN apt-get install -y chromium-browser
