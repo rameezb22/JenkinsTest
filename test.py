@@ -9,3 +9,15 @@ driver = webdriver.Chrome(options=cchrome_options)
 
 
 driver.get("https://m2gcloud.lockular.ai/")
+
+
+driver.implicitly_wait(20)  # Adjust the timeout as needed
+
+# Fetch the HTML data
+html_data = driver.page_source
+
+# Print or process the HTML data as desired
+print(html_data)
+
+# Close the browser
+driver.quit()
