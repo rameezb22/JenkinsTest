@@ -33,7 +33,7 @@ time.sleep(60)
 
 html_data = driver.page_source
 
-elements = driver.find_elements_by_class_name('xyz')
+elements = driver.find_element(By.CLASS,'widget-value color-green')
 
 
 for element in elements:
