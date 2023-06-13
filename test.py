@@ -1,7 +1,6 @@
 
 
-Selenium selenium = new DefaultSelenium("localhost", 4444, "*firefox", "http://my.test.site.org/");
-
+from selenium import webdriver
 # Navigate to the webpage
 driver.get('http://example.com')
 
