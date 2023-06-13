@@ -2,9 +2,9 @@
 
 from selenium import webdriver
 
-driver = webdriver.Firefox()
+driver = webdriver.Firefox('/usr/bin/firefox')
 # Navigate to the webpage
-driver.get('http://example.com')
+driver.get('http://m2g-cloud.lockular.ai')
 
 # Wait for the page to fully load
 driver.implicitly_wait(10)  # Adjust the timeout as needed
